@@ -28,23 +28,43 @@ main {
     width: 520px;
     margin-top: 100px;
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .para2nd {
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 .para3rd {
     margin-bottom: 25px;
+    font-size: 20px;
 }
 
 input {
     margin-bottom: 20px;
     width: 270px;
-    height: 28px;
+    height: 29px;
     appearance: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 1px 3px gray;
+}
+
+input:required:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+.label {
+    font-size: 14px;
 }
 
 button {
@@ -54,6 +74,23 @@ button {
     height: 40px;
     border: none;
     border-radius: 5px;
-    background-color: blue;
+    background-color: #596D48;
     color: white;
+}
+
+span {
+    color: #596D48;
+}
+
+.white-container {
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 2px 3px grey;
+}
+
+/* .form-container {
+    margin-left: 50px;
+} */
+
+.para1st, .para2nd, .para3rd, .first, button, {
+    margin-left: 50px;
 }
